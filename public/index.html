@@ -80,6 +80,80 @@
                 flex: 1 1 calc(100% - 1rem);
             }
         }
+
+        .skills__header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 1.5rem;
+        }
+
+        .skills__title {
+            font-size: 1rem;
+            font-weight: 600;
+        }
+
+        .skills__subtitle {
+            font-size: 0.875rem;
+            color: #666;
+        }
+
+        .skills__list {
+            display: grid;
+            gap: 1rem;
+        }
+
+        .skills__data {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .skills__titles {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+        }
+
+        .skills__name {
+            font-size: 0.875rem;
+            font-weight: 600;
+        }
+
+        .skills__number {
+            font-size: 0.875rem;
+            color: #666;
+        }
+
+        .skills__bar {
+            height: 0.25rem;
+            width: 100%;
+            background-color: #f0f0f0;
+            border-radius: 0.25rem;
+            overflow: hidden;
+            margin-left: 1rem;
+        }
+
+        .skills__percentage {
+            height: 100%;
+            background-color: #00eeff;
+        }
+
+        .skills__html { width: 90%; }
+        .skills__css { width: 80%; }
+        .skills__js { width: 60%; }
+        .skills__react { width: 50%; }
+        .skills__python { width: 60%; }
+        .skills__cpp { width: 50%; }
+        .skills__sql { width: 60%; }
+        .skills__java { width: 50%; }
+
+        .skills__rest-api { width: 70%; }
+        .skills__vcs { width: 60%; }
+        .skills__node { width: 70%; }
+        .skills__redux { width: 50%; }
+        .skills__next { width: 50%; }
     </style>
 </head>
 <body>
@@ -199,12 +273,12 @@
             <h2 class="section__title">Skills</h2>
             <div class="skills__container container grid">
                 <div>
-                    <!--==================== SKILL-1 ====================-->
+                    <!--==================== LANGUAGES ====================-->
                     <div class="skills__content skills__close">
                         <div class="skills__header">
                             <i class="uil uil-brackets-curly skills__icon"></i>
                             <div>
-                                <h1 class="skills__title">My technical level</h1>
+                                <h1 class="skills__title">Languages</h1>
                                 <span class="skills__subtitle"></span>
                             </div>
                             <i class="uil uil-angle-down skills__arrow"></i>
@@ -237,15 +311,6 @@
                                     <span class="skills__percentage skills__js"></span>
                                 </div>
                             </div>
-                            <div class="skills__data">
-                                <div class="skills__titles">
-                                    <h3 class="skills__name">React.js</h3>
-                                    <span class="skills__number">50%</span>
-                                </div>
-                                <div class="skills__bar">
-                                    <span class="skills__percentage skills__sql"></span>
-                                </div>
-                            </div>
                         </div>
                         <div class="skills__list grid">
                             <div class="skills__data">
@@ -254,7 +319,7 @@
                                     <span class="skills__number">60%</span>
                                 </div>
                                 <div class="skills__bar">
-                                    <span class="skills__percentage skills__js"></span>
+                                    <span class="skills__percentage skills__python"></span>
                                 </div>
                             </div>
                             <div class="skills__data">
@@ -263,7 +328,7 @@
                                     <span class="skills__number">50%</span>
                                 </div>
                                 <div class="skills__bar">
-                                    <span class="skills__percentage skills__sql"></span>
+                                    <span class="skills__percentage skills__cpp"></span>
                                 </div>
                             </div>
                             <div class="skills__data">
@@ -272,7 +337,7 @@
                                     <span class="skills__number">60%</span>
                                 </div>
                                 <div class="skills__bar">
-                                    <span class="skills__percentage skills__js"></span>
+                                    <span class="skills__percentage skills__sql"></span>
                                 </div>
                             </div>
                             <div class="skills__data">
@@ -281,7 +346,67 @@
                                     <span class="skills__number">50%</span>
                                 </div>
                                 <div class="skills__bar">
-                                    <span class="skills__percentage skills__sql"></span>
+                                    <span class="skills__percentage skills__java"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--==================== TECHNOLOGIES ====================-->
+                    <div class="skills__content skills__close">
+                        <div class="skills__header">
+                            <i class="uil uil-server skills__icon"></i>
+                            <div>
+                                <h1 class="skills__title">Technologies</h1>
+                                <span class="skills__subtitle"></span>
+                            </div>
+                            <i class="uil uil-angle-down skills__arrow"></i>
+                        </div>
+                        <div class="skills__list grid">
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">REST API</h3>
+                                    <span class="skills__number">70%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__rest-api"></span>
+                                </div>
+                            </div>
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">VCS</h3>
+                                    <span class="skills__number">60%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__vcs"></span>
+                                </div>
+                            </div>
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">Node.js</h3>
+                                    <span class="skills__number">70%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__node"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skills__list grid">
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">Redux.js</h3>
+                                    <span class="skills__number">50%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__redux"></span>
+                                </div>
+                            </div>
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">Next.js</h3>
+                                    <span class="skills__number">50%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__next"></span>
                                 </div>
                             </div>
                         </div>
