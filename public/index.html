@@ -14,19 +14,16 @@
         .project__container {
             display: flex;
             justify-content: space-between;
-            width: 100vw;
-            padding: 0;
-            margin: 0;
-            box-sizing: border-box;
+            flex-wrap: wrap;
+            gap: 1rem;
         }
 
         .project__content {
             background-color: #fff;
             padding: 1rem;
+            flex: 1 1 calc(25% - 1rem);
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
             transition: transform 0.3s;
-            flex: 1;
-            margin: 0.5rem;
         }
 
         .project__content:hover {
@@ -43,7 +40,7 @@
         .project__title {
             font-size: 1rem;
             margin-bottom: 0.5rem;
-            color: #0056b3;
+            color: #0a0a0a;
         }
 
         .project__description {
@@ -64,6 +61,24 @@
 
         .project__button:hover {
             background-color: #0056b3;
+        }
+
+        @media (max-width: 1024px) {
+            .project__content {
+                flex: 1 1 calc(50% - 1rem);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .project__content {
+                flex: 1 1 calc(100% - 1rem);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .project__content {
+                flex: 1 1 calc(100% - 1rem);
+            }
         }
     </style>
 </head>
@@ -290,21 +305,25 @@
                 <div class="project__content">
                     <img src="packages/images/OIP.jpeg" alt="Project 2" class="project__img">
                     <h3 class="project__title">Movie recommender system</h3>
-                    <p class="project__description">This project aims to create an interactive movie recommender system using Streamlit, a popular Python library for building web applications.</p>
+                    <p class="project__description">
+                        This project aims to create an interactive movie recommender system using Streamlit, a popular Python library for building web applications. </p>
                     <a href="https://github.com/Muskans89/Movie-recommender-system" class="project__button" target="_blank">View Project</a>
                 </div>
                 <!-- Project 3 -->
                 <div class="project__content">
                     <img src="packages/images/blodd.jpeg" alt="Project 3" class="project__img">
                     <h3 class="project__title">Blood Bank Management System</h3>
-                    <p class="project__description">The Blood Bank System is designed to deliver the best user experience by leveraging Java Enterprise, including Servlets and JSP.</p>
+                    <p class="project__description">
+                        The Blood Bank System is designed to deliver the best user experience by leveraging Java Enterprise, including Servlets and JSP. 
+                     </p>
                     <a href="https://github.com/Muskans89/Blood-bank-management-system" class="project__button" target="_blank">View Project</a>
                 </div>
                 <!-- Project 4 -->
                 <div class="project__content">
                     <img src="packages/images/grocery.jpg" alt="Project 4" class="project__img">
                     <h3 class="project__title">Grocery Management System</h3>
-                    <p class="project__description">Developed a grocery management system using ASP.NET and C# for clients and shop owners, with a database hosted on AWS.</p>
+                    <p class="project__description">Developed a grocery management system using ASP.NET and C# for 
+                        clients and shop owners, with a database hosted on AWS.</p>
                     <a href="https://project2.url" class="project__button" target="_blank">View Project</a>
                 </div>
             </div>
