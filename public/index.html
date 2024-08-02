@@ -406,27 +406,27 @@
                     </div>
                 </div>
 
-                <form action="/send-email" method="POST" class="contact__form grid">
+                <form action="/api/send-email" method="POST" class="contact__form grid">
                     <div class="contact__inputs grid">
                         <div class="contact__content">
                             <label for="name" class="contact__label">Name</label>
-                            <input type="text" name="name" class="contact__input">
+                            <input type="text" name="name" class="contact__input" required>
                         </div>
                 
                         <div class="contact__content">
                             <label for="email" class="contact__label">E-mail</label>
-                            <input type="email" name="email" class="contact__input">
+                            <input type="email" name="email" class="contact__input" required>
                         </div>
                     </div>
                 
                     <div class="contact__content">
                         <label for="subject" class="contact__label">Subject</label>
-                        <input type="text" name="subject" class="contact__input">
+                        <input type="text" name="subject" class="contact__input" required>
                     </div>
                 
                     <div class="contact__content">
                         <label for="description" class="contact__label">Description</label>
-                        <textarea name="description" cols="0" rows="7" class="contact__input"></textarea>
+                        <textarea name="description" cols="0" rows="7" class="contact__input" required></textarea>
                     </div>
                 
                     <div>
@@ -435,7 +435,8 @@
                             <i class="uil uil-message button__icon"></i>
                         </button>
                     </div>
-                </form>                
+                </form>
+                            
             </div>
 
         </section>
